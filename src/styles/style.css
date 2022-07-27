@@ -93,20 +93,24 @@ a {
   font-weight: 700;
   font-size: 1.3em;
   line-height: 35px;
+  position: relative;
 }
 .main-info .main-title::after {
   content: "";
   display: inline-block;
   width: 1px;
-  height: 20px;
   background-color: #888888;
   vertical-align: -1px;
-  margin: 0 10px;
+  margin: 7px 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .main-info .main-tel {
   font-weight: 700;
   font-size: 1.3em;
   line-height: 35px;
+  margin-left: 20px;
   color: var(--main-color);
 }
 .card .content {
@@ -114,11 +118,16 @@ a {
   font-size: 1.3em;
   line-height: 29px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .info-list {
   width: 356px;
   margin-bottom: 5px;
   color: #007cef;
+}
+.info-list .info-wrap {
+  width: 100%;
+  margin-bottom: 5px;
 }
 dt,
 dd {
@@ -132,7 +141,7 @@ dd {
   line-height: 23px;
   text-align: justify;
   color: #aaaaaa;
-  vertical-align: middle;
+  vertical-align: top;
   height: 23px;
   overflow: hidden;
 }
@@ -145,7 +154,8 @@ dd {
 .info-list dd {
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 23px; */
+  margin: 0;
+  width: 270px;
   color: #666666;
   vertical-align: middle;
 }

@@ -41,16 +41,18 @@ function setFoodCard() {
             </div>
             <p class="content" id="itemcntnts">${item.ITEMCNTNTS}</p>
             <dl class="info-list">
-              <dt class="info-addr">주 소</dt>
-              <dd id="addr1">${item.ADDR1}</dd>
-            </dl>
-            <dl class="info-list">
-              <dt>영업시간</dt>
-              <dd id="usage-day-week-and-time">${item.USAGE_DAY_WEEK_AND_TIME}</dd>
-            </dl>
-            <dl class="info-list">
-              <dt>대표메뉴</dt>
-              <dd id="rpesntv-menu">${item.RPRSNTV_MENU}</dd>
+              <div class="info-wrap">
+                <dt class="info-addr">주 소</dt>
+                <dd id="addr1">${item.ADDR1}</dd>
+              </div>
+              <div class="info-wrap">
+                <dt>영업시간</dt>
+                <dd id="usage-day-week-and-time">${item.USAGE_DAY_WEEK_AND_TIME}</dd>
+              </div>
+              <div class="info-wrap">
+                <dt>대표메뉴</dt>
+                <dd id="rpesntv-menu">${item.RPRSNTV_MENU}</dd>
+              </div>
             </dl>
             <img class="like-wrap" src="./src/images/icon/heart-full.svg" alt="좋아요">
           </div>
