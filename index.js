@@ -29,7 +29,7 @@ async function init() {
       `http://apis.data.go.kr/6260000/FoodService/getFoodKr${queryParams}`
     ).then((res) => res.json());
     dataObj.datas = foods.getFoodKr.item;
-    loadPage(9);
+    loadPage(1);
   } catch (err) {
     console.error(err);
   }
