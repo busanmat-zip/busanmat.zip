@@ -57,30 +57,30 @@ function loadPage(page) {
 
         let card = document.createElement("article");
         card.innerHTML = `
-    <div class="card">
-    <span class="gu-name" id="gugun_name">${item.GUGUN_NM}</span>
-    <img src=${item.MAIN_IMG_NORMAL} alt="맛집 사진" class="main-img" id="main-img-thumb" >
-    <div class="main-info">
-    <strong class="main-title" id="main-title">${item.MAIN_TITLE}</strong>
-    <strong class="main-tel" id="cntct-tel">${item.CNTCT_TEL}</strong>
-    </div>
-    <p class="content" id="itemcntnts">${item.ITEMCNTNTS}</p>
-    <dl class="info-list">
-      <div class="info-wrap">
-        <dt class="info-addr">주 소</dt>
-        <dd id="addr1">${item.ADDR1}</dd>
-      </div>
-      <div class="info-wrap">
-        <dt>영업시간</dt>
-        <dd id="usage-day-week-and-time">${item.USAGE_DAY_WEEK_AND_TIME}</dd>
-      </div>
-      <div class="info-wrap">
-        <dt>대표메뉴</dt>
-        <dd id="rpesntv-menu">${item.RPRSNTV_MENU}</dd>
-      </div>
-    </dl>
-    <img class="like-wrap" src="./src/images/icon/heart-full.svg" alt="좋아요">
-  </div>
+          <div class="card">
+          <span class="gu-name" id="gugun_name">${item.GUGUN_NM}</span>
+          <img src=${item.MAIN_IMG_NORMAL} alt="맛집 사진" class="main-img" id="main-img-thumb" >
+          <div class="main-info">
+          <strong class="main-title" id="main-title">${item.MAIN_TITLE}</strong>
+          <strong class="main-tel" id="cntct-tel">${item.CNTCT_TEL}</strong>
+          </div>
+          <p class="content" id="itemcntnts">${item.ITEMCNTNTS}</p>
+          <dl class="info-list">
+            <div class="info-wrap">
+              <dt class="info-addr">주 소</dt>
+              <dd id="addr1">${item.ADDR1}</dd>
+            </div>
+            <div class="info-wrap">
+              <dt>영업시간</dt>
+              <dd id="usage-day-week-and-time">${item.USAGE_DAY_WEEK_AND_TIME}</dd>
+            </div>
+            <div class="info-wrap">
+              <dt>대표메뉴</dt>
+              <dd id="rpesntv-menu">${item.RPRSNTV_MENU}</dd>
+            </div>
+          </dl>
+          <img class="like-wrap" src="./src/images/icon/heart-full.svg" alt="좋아요">
+        </div>
       `;
         output.append(card);
     }
