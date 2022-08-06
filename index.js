@@ -3,7 +3,7 @@ const output = document.querySelector(".card-wrap");
 // 공공 데이터 가져오기
 let queryParams = `?${encodeURIComponent(
     "serviceKey"
-)}=${"6Cj0pYEsAaNPo5HZ6LyDA12xevEBvR9DiavPl0UH5DABo4Gzh0Wzh9493PQW30s5y46xfyw2F6TTH9RCFoNZsA=="}`; //서비스 키(Decoding)
+)}=${"서비스키"}`; //서비스 키(Decoding)
 queryParams += `&${encodeURIComponent("pageNo")}=${encodeURIComponent("1")}`;
 queryParams += `&${encodeURIComponent("numOfRows")}=${encodeURIComponent(
     "50"
